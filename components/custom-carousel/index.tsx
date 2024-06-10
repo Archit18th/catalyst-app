@@ -20,14 +20,14 @@ export const CustomCarousel = () => (
     <SlideshowContent>
       <SlideshowSlide>
             <div className="relative">
-            <Image
+            {/* <Image
                 alt="an assortment of brandless products against a blank background"
                 className="absolute -z-10 object-cover"
                 fill
                 priority
                 sizes="(max-width: 1536px) 100vw, 1536px"
                 src={CustomImage}
-            />
+            /> */}
             <Image
                 alt="an assortment of brandless products against a blank background"
                 className="absolute -z-10 object-cover"
