@@ -7,6 +7,7 @@ import { client } from '~/client';
 import { graphql } from '~/client/graphql';
 import { revalidate } from '~/client/revalidate-target';
 import { Hero } from '~/components/hero';
+import { CustomCarousel } from '~/components/custom-carousel';
 import {
   ProductCardCarousel,
   ProductCardCarouselFragment,
@@ -62,8 +63,8 @@ export default async function Home({ params: { locale } }: Props) {
 
   return (
     <>
-      <Hero />
-
+      {/* <Hero /> */}
+      <CustomCarousel />
       <div className="my-10">
         <NextIntlClientProvider locale={locale} messages={{ Product: messages.Product ?? {} }}>
           <ProductCardCarousel
