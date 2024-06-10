@@ -64,7 +64,7 @@ export default async function Home({ params: { locale } }: Props) {
   return (
     <>
       <Hero />
-      <CustomCarousel />
+      {/* <CustomCarousel /> */}
       <div className="my-10">
         <NextIntlClientProvider locale={locale} messages={{ Product: messages.Product ?? {} }}>
           <ProductCardCarousel
